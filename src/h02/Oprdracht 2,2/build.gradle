@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+import java.awt.*;
+import java.applet.*;
+
+public class Show extends Applet {
+
+    public void init() {
+        setBackground(Color.white);
+    }
+
+    public void paint(Graphics g) {
+        g.setColor(Color.blue);
+        g.drawString("Hooman", 50, 60 );
+        g.setColor(Color.red)
+        g.drawString("Daliri", 50, 50);
+    }
+}
